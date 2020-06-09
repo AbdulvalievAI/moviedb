@@ -1,6 +1,7 @@
 **Описание:**
 
 Demo приложение для Google Play для просмотра информации о фильмах.
+https://play.google.com/store/apps/details?id=ru.platform.moviedb
 
 
 **Информация о приложени и его сборки:** https://confluence.altarix.ru/confluence/display/MARM2/MovieDB
