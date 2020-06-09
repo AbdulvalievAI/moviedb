@@ -1,0 +1,165 @@
+{
+    "name": "Movies",
+    "public": true,
+    "entry_point": true,
+    "type": "view",
+    "elements": [
+        {
+            "type": "appbar",
+            "hint": "{Search}",
+            "title": "{Movies}",
+            "hasTabs": true,
+            "id": "appbar"
+        },
+        {
+            "type": "view",
+            "scrollable": true,
+            "visibility": false,
+            "id": "emptyListLbl",
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "width": "100%",
+                            "height": "100%"
+                        }
+                    ]
+                }
+            ],
+            "elements": [
+                {
+                    "type": "label",
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "width": "100%",
+                                    "fontSize": 20,
+                                    "marginTop": 15
+                                }
+                            ]
+                        }
+                    ],
+                    "align": "center",
+                    "value": "{Empty}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "disableVirtualization": true,
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "width": "100%"
+                        }
+                    ]
+                },
+                {
+                    "listItem": [
+                        {
+                            "justifyContent": "flex-start",
+                            "marginTop": 15,
+                            "marginBottom": 15,
+                            "height": 150,
+                            "width": "100%",
+                            "paddingRight": 10,
+                            "paddingLeft": 10
+                        }
+                    ]
+                }
+            ],
+            "itemTemplate": "TemplateMoviesViewList",
+            "id": "moviesViewList"
+        },
+        {
+            "type": "list",
+            "disableVirtualization": true,
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "width": "100%"
+                        }
+                    ]
+                },
+                {
+                    "listItem": [
+                        {
+                            "justifyContent": "flex-start",
+                            "marginTop": 15,
+                            "marginBottom": 15,
+                            "width": "100%",
+                            "height": 230,
+                            "paddingRight": 10,
+                            "paddingLeft": 10
+                        }
+                    ]
+                }
+            ],
+            "itemTemplate": "TemplateMoviesFullscreen",
+            "id": "moviesFullscreenList",
+            "visibility": false
+        },
+        {
+            "type": "list",
+            "disableVirtualization": true,
+            "columns": 2,
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "width": "100%"
+                        }
+                    ]
+                },
+                {
+                    "listItem": [
+                        {
+                            "justifyContent": "flex-start",
+                            "height": 315,
+                            "width": "100%",
+                            "padding": 10
+                        }
+                    ]
+                }
+            ],
+            "itemTemplate": "TemplateMoviesGridList",
+            "id": "moviesGridList",
+            "visibility": false
+        },
+        {
+            "type": "list",
+            "disableVirtualization": true,
+            "columns": 4,
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "width": "100%"
+                        }
+                    ]
+                },
+                {
+                    "listItem": [
+                        {
+                            "justifyContent": "flex-start",
+                            "height": 182,
+                            "width": "100%",
+                            "marginTop": 5,
+                            "marginBottom": 5
+                        }
+                    ]
+                }
+            ],
+            "itemTemplate": "TemplateMoviesComfyList",
+            "id": "moviesComfyList",
+            "visibility": false
+        }
+    ],
+    "uptime": 1568625892,
+    "createDoc": 1563879129,
+    "id": "5d36e750fd0fdc776c83c43d",
+    "styles": ["match_parent"]
+}

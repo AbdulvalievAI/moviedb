@@ -1,0 +1,59 @@
+{
+    "name": "TemplateVideos",
+    "public": false,
+    "type": "view",
+    "elements": [
+        {
+            "type": "view",
+            "align": "center_top",
+            "elements": [
+                {
+                    "type": "image",
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "width": "100%",
+                                    "height": 90,
+                                    "overflow": "hidden",
+                                    "borderRadius": 10
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "photo",
+                    "fit": "contain"
+                }
+            ],
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "overflow": "hidden",
+                            "width": "100%"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "label",
+            "id": "name",
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "marginTop": 5,
+                            "fontSize": 13,
+                            "width": "100%"
+                        }
+                    ]
+                }
+            ],
+            "align": "center"
+        }
+    ],
+    "uptime": 1568893176,
+    "createDoc": 1568893176,
+    "id": "5d8368fe6bd1a53db01ccb42"
+}

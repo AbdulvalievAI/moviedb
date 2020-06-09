@@ -1,0 +1,144 @@
+{
+    "name": "TemplateMoviesViewList",
+    "public": false,
+    "type": "view",
+    "elements": [
+        {
+            "type": "container",
+            "nestedScreen": "ChildTemplateMoviesVoteAverage"
+        },
+        {
+            "type": "view",
+            "elements": [
+                {
+                    "type": "image",
+                    "fit": "cover",
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "overflow": "hidden",
+                                    "borderRadius": 10,
+                                    "height": "100%"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "posterImg",
+                    "value": ""
+                }
+            ],
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "height": "100%",
+                            "paddingRight": 10
+                        }
+                    ]
+                }
+            ],
+            "align": "center"
+        },
+        {
+            "type": "view",
+            "elements": [
+                {
+                    "type": "label",
+                    "id": "nameLbl",
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "fontWeight": "bold",
+                                    "fontSize": 16
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "label",
+                    "id": "originalNameLbl",
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "fontSize": 14,
+                                    "color": "rgba(207, 216, 220, 1)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "label",
+                    "id": "genreLbl",
+                    "value": "{Genres}",
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "paddingTop": 5,
+                                    "fontSize": 16
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "view",
+                    "elements": [
+                        {
+                            "type": "label",
+                            "id": "releaseDateLbl",
+                            "value": "",
+                            "align": "center"
+                        },
+                        {
+                            "type": "container",
+                            "nestedScreen": "ChildTemplateMoviesFavorites"
+                        }
+                    ],
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "width": "100%",
+                                    "marginTop": "auto",
+                                    "display": "flex",
+                                    "justifyContent": "space-between"
+                                }
+                            ]
+                        }
+                    ],
+                    "align": "left_center",
+                    "orientation": "horizontal"
+                }
+            ],
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "height": "100%",
+                            "width": "70%"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "styles": [
+        {
+            "self": [
+                {
+                    "width": "100%"
+                }
+            ]
+        }
+    ],
+    "uptime": 1565257995,
+    "createDoc": 1563977833,
+    "id": "5d38688135c07f922b623c8e",
+    "orientation": "horizontal"
+}

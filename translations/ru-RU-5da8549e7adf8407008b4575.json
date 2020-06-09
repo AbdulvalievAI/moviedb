@@ -1,0 +1,30 @@
+{
+    "id": "5da8549e7adf8407008b4575",
+    "locale": "ru-RU",
+    "values": {
+        "Movies": "Фильмы",
+        "Search": "Поиск",
+        "Empty": "Список пуст",
+        "Genres": "Жанры",
+        "Filters": "Фильтрация",
+        "Sorting": "Сортировка",
+        "Clean": "Отчистить",
+        "Apply": "Применить",
+        "Actors": "Актёры",
+        "Companies": "Компании",
+        "Access_error": "Ошибка доступа.",
+        "Server_error": "Ошибка сервера.",
+        "Connection_error": "Ошибка соединения.",
+        "Error_open_file": "Не удалось открыть файл.",
+        "Unknown_error": "Неизвестная ошибка.",
+        "Close": "Закрыть",
+        "List_view": "Вид списка",
+        "Popularity": "Популярность",
+        "Date_of_release": "Дата выпуска",
+        "Revenue": "Доход",
+        "Rating": "Рейтинг",
+        "Number_of_ratings": "Количество оценок",
+        "No_internet_connection": "Отсутствует интернет соединение",
+        "Trailers": "Трейлеры"
+    }
+}

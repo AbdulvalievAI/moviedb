@@ -1,0 +1,258 @@
+{
+    "name": "PopupFilterMovies",
+    "public": false,
+    "type": "view",
+    "elements": [
+        {
+            "type": "view",
+            "elements": [
+                {
+                    "type": "label",
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "fontSize": 20,
+                                    "fontWeight": "bold",
+                                    "width": "100%"
+                                }
+                            ]
+                        }
+                    ],
+                    "value": "{Filters}",
+                    "align": "center"
+                },
+                {
+                    "type": "view",
+                    "elements": [
+                        {
+                            "type": "view",
+                            "elements": [
+                                {
+                                    "type": "icon",
+                                    "value": "video-vintage",
+                                    "color": "#ECEFF1"
+                                },
+                                {
+                                    "type": "label",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "marginLeft": 5,
+                                                    "fontSize": 16
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "value": "{Genres}",
+                                    "id": "genresLbl"
+                                }
+                            ],
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "marginTop": 15
+                                        }
+                                    ]
+                                }
+                            ],
+                            "orientation": "horizontal",
+                            "align": "left_center"
+                        },
+                        {
+                            "type": "list",
+                            "orientation": "horizontal",
+                            "itemTemplate": {
+                                "type": "button",
+                                "id": "genreBtn"
+                            },
+                            "id": "genresList",
+                            "styles": [
+                                {
+                                    "listItem": [
+                                        {
+                                            "marginRight": 5,
+                                            "marginLeft": 5,
+                                            "width": 125
+                                        }
+                                    ]
+                                },
+                                {
+                                    "self": [
+                                        {
+                                            "paddingBottom": 5,
+                                            "marginTop": 5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "view",
+                            "elements": [
+                                {
+                                    "type": "icon",
+                                    "value": "sort",
+                                    "color": "#ECEFF1"
+                                },
+                                {
+                                    "type": "label",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "marginLeft": 5,
+                                                    "fontSize": 16
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "value": "{Sorting}"
+                                }
+                            ],
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "marginTop": 15
+                                        }
+                                    ]
+                                }
+                            ],
+                            "orientation": "horizontal",
+                            "align": "left_center"
+                        },
+                        {
+                            "kind": "outlined",
+                            "type": "dropdown",
+                            "isFloatingTitle": false,
+                            "id": "sortList",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "color": "#ECEFF1"
+                                        }
+                                    ],
+                                    "text": [
+                                        {
+                                            "color": "#ECEFF1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "view",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "kind": "icon",
+                                    "icon": "delete",
+                                    "title": "{Clean}",
+                                    "id": "clearFilterBtn",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "backgroundColor": "#ECEFF1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "button",
+                                    "kind": "icon",
+                                    "icon": "check",
+                                    "title": "{Apply}",
+                                    "id": "applyFilterBtn",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "backgroundColor": "#ECEFF1",
+                                                    "marginLeft": "auto"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "marginTop": 15
+                                        }
+                                    ]
+                                }
+                            ],
+                            "orientation": "horizontal"
+                        }
+                    ],
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "width": "100%"
+                                }
+                            ]
+                        }
+                    ],
+                    "scrollable": true
+                }
+            ],
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "width": "100%",
+                            "backgroundColor": "rgba(69, 90, 100, 1)",
+                            "borderRadius": 5,
+                            "padding": 10
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "view",
+            "elements": [],
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "display": "flex",
+                            "justifyContent": "space-between",
+                            "width": "100%",
+                            "marginTop": 15
+                        }
+                    ]
+                }
+            ],
+            "orientation": "horizontal",
+            "align": "left_center"
+        }
+    ],
+    "uptime": 1565093259,
+    "createDoc": 1564642725,
+    "id": "5d428dcf6309775619f7a877",
+    "styles": [
+        {
+            "self": [
+                {
+                    "padding": 30,
+                    "width": "100%"
+                }
+            ]
+        }
+    ],
+    "align": "left_top"
+}

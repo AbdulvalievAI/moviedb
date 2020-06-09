@@ -1,0 +1,60 @@
+{
+    "name": "TemplateActors",
+    "public": false,
+    "type": "view",
+    "elements": [
+        {
+            "type": "view",
+            "elements": [
+                {
+                    "type": "image",
+                    "fit": "cover",
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "width": "100%",
+                                    "height": "100%"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "photo"
+                }
+            ],
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "borderRadius": 10,
+                            "overflow": "hidden",
+                            "justifyContent": "flex-start",
+                            "width": "100%",
+                            "height": 90
+                        }
+                    ]
+                }
+            ],
+            "align": "center_top"
+        },
+        {
+            "type": "label",
+            "id": "name",
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "marginTop": 5,
+                            "fontSize": 13,
+                            "width": "100%"
+                        }
+                    ]
+                }
+            ],
+            "align": "center"
+        }
+    ],
+    "uptime": 1565095901,
+    "createDoc": 1564487069,
+    "id": "5d402ed5d8fc9d81c03914d7"
+}

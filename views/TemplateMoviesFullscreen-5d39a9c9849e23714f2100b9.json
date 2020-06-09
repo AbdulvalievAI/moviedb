@@ -1,0 +1,129 @@
+{
+    "name": "TemplateMoviesFullscreen",
+    "public": false,
+    "type": "view",
+    "elements": [
+        {
+            "type": "label",
+            "id": "nameLbl",
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "fontWeight": "bold",
+                            "fontSize": 16
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "label",
+            "id": "originalNameLbl",
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "fontSize": 14,
+                            "color": "rgba(207, 216, 220, 1)"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "view",
+            "elements": [
+                {
+                    "type": "image",
+                    "fit": "cover",
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "overflow": "hidden",
+                                    "borderRadius": 10,
+                                    "width": "100%",
+                                    "height": "100%"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "posterImg"
+                },
+                {
+                    "type": "container",
+                    "nestedScreen": "ChildTemplateMoviesVoteAverage"
+                }
+            ],
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "width": "100%",
+                            "height": 160,
+                            "marginTop": 5,
+                            "marginBottom": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "label",
+            "id": "genreLbl",
+            "value": "Жанр",
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "fontSize": 15,
+                            "width": "100%"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "view",
+            "elements": [
+                {
+                    "type": "label",
+                    "id": "releaseDateLbl",
+                    "value": "",
+                    "align": "center"
+                },
+                {
+                    "type": "container",
+                    "nestedScreen": "ChildTemplateMoviesFavorites"
+                }
+            ],
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "width": "100%",
+                            "marginTop": "auto",
+                            "display": "flex",
+                            "justifyContent": "space-between"
+                        }
+                    ]
+                }
+            ],
+            "align": "left_center",
+            "orientation": "horizontal"
+        }
+    ],
+    "uptime": 1565259229,
+    "createDoc": 1564060081,
+    "id": "5d39a9c9849e23714f2100b9",
+    "styles": [
+        {
+            "self": [
+                {
+                    "width": "100%"
+                }
+            ]
+        }
+    ]
+}

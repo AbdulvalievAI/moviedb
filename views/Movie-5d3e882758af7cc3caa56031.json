@@ -1,0 +1,773 @@
+{
+    "name": "Movie",
+    "public": false,
+    "type": "view",
+    "elements": [
+        {
+            "type": "appbar",
+            "title": "",
+            "id": "appbar",
+            "leftIcon": "arrow-left",
+            "hasTabs": true
+        },
+        {
+            "type": "view",
+            "id": "generalView",
+            "scrollable": true,
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "marginTop": 10,
+                            "width": "100%"
+                        }
+                    ]
+                }
+            ],
+            "elements": [
+                {
+                    "type": "view",
+                    "id": "swiperView",
+                    "elements": [
+                        {
+                            "type": "view",
+                            "align": "center",
+                            "id": "swiperPgsBlock",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "height": "100%"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "elements": [
+                                {
+                                    "type": "progress",
+                                    "color": "#ECEFF1",
+                                    "size": 60
+                                }
+                            ]
+                        },
+                        {
+                            "id": "swiper",
+                            "showsButtons": false,
+                            "type": "swiper",
+                            "index": 0,
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "heigth": "100%"
+                                        }
+                                    ],
+                                    "pagination": [
+                                        {
+                                            "bottom": 10
+                                        }
+                                    ],
+                                    "dot": [
+                                        {
+                                            "backgroundColor": "#78909C",
+                                            "width": 8,
+                                            "height": 8,
+                                            "borderRadius": 4,
+                                            "marginLeft": 7,
+                                            "marginRight": 7
+                                        }
+                                    ],
+                                    "dotActive": [
+                                        {
+                                            "backgroundColor": "#ECEFF1",
+                                            "width": 8,
+                                            "height": 8,
+                                            "borderRadius": 4,
+                                            "marginLeft": 7,
+                                            "marginRight": 7
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "width": "100%",
+                                    "height": 200
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "view",
+                    "elements": [
+                        {
+                            "type": "label",
+                            "id": "nameLbl",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "fontSize": 20,
+                                            "fontWeight": "bold"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "label",
+                            "id": "originalNameLbl",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "fontSize": 17,
+                                            "color": "rgba(207, 216, 220, 1)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "label",
+                            "id": "genresLbl",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "fontWeight": "bold"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "view",
+                            "elements": [
+                                {
+                                    "type": "icon",
+                                    "value": "star-outline",
+                                    "color": "#ECEFF1",
+                                    "size": 26
+                                },
+                                {
+                                    "type": "label",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "marginLeft": 5,
+                                                    "fontSize": 16
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "id": "voteAverageLbl"
+                                }
+                            ],
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "marginTop": 15
+                                        }
+                                    ]
+                                }
+                            ],
+                            "orientation": "horizontal",
+                            "align": "left_center",
+                            "id": "voteAverageBlock"
+                        },
+                        {
+                            "type": "view",
+                            "elements": [
+                                {
+                                    "type": "icon",
+                                    "value": "clock-outline",
+                                    "color": "#ECEFF1",
+                                    "size": 26
+                                },
+                                {
+                                    "type": "view",
+                                    "id": "runtimePgsBlock",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "marginLeft": 5
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "elements": [
+                                        {
+                                            "type": "progress",
+                                            "color": "#ECEFF1",
+                                            "size": 26
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "label",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "marginLeft": 5,
+                                                    "fontSize": 16
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "id": "runtimeLbl",
+                                    "visibility": false
+                                }
+                            ],
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "marginTop": 15
+                                        }
+                                    ]
+                                }
+                            ],
+                            "orientation": "horizontal",
+                            "align": "left_center",
+                            "id": "runtimeBlock"
+                        },
+                        {
+                            "type": "view",
+                            "elements": [
+                                {
+                                    "type": "icon",
+                                    "value": "calendar-check",
+                                    "color": "#ECEFF1",
+                                    "size": 26
+                                },
+                                {
+                                    "type": "label",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "marginLeft": 5,
+                                                    "fontSize": 16
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "id": "releaseDateLbl"
+                                }
+                            ],
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "marginTop": 15
+                                        }
+                                    ]
+                                }
+                            ],
+                            "orientation": "horizontal",
+                            "align": "left_center",
+                            "id": "releaseDateBlock"
+                        },
+                        {
+                            "type": "view",
+                            "elements": [
+                                {
+                                    "type": "icon",
+                                    "value": "bank",
+                                    "color": "#ECEFF1",
+                                    "size": 26
+                                },
+                                {
+                                    "type": "view",
+                                    "id": "budgetPgsBlock",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "marginLeft": 5
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "elements": [
+                                        {
+                                            "type": "progress",
+                                            "color": "#ECEFF1",
+                                            "size": 26
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "label",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "marginLeft": 5,
+                                                    "fontSize": 16
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "id": "budgetLbl",
+                                    "visibility": false
+                                }
+                            ],
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "marginTop": 10
+                                        }
+                                    ]
+                                }
+                            ],
+                            "orientation": "horizontal",
+                            "align": "left_center",
+                            "id": "budgetBlock"
+                        },
+                        {
+                            "type": "view",
+                            "elements": [
+                                {
+                                    "type": "icon",
+                                    "value": "currency-usd",
+                                    "color": "#ECEFF1",
+                                    "size": 26
+                                },
+                                {
+                                    "type": "view",
+                                    "id": "revenuePgsBlock",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "marginLeft": 5
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "elements": [
+                                        {
+                                            "type": "progress",
+                                            "color": "#ECEFF1",
+                                            "size": 26
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "label",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "marginLeft": 5,
+                                                    "fontSize": 16
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "id": "revenueLbl",
+                                    "visibility": false
+                                }
+                            ],
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "marginTop": 10
+                                        }
+                                    ]
+                                }
+                            ],
+                            "orientation": "horizontal",
+                            "align": "left_center",
+                            "id": "revenueBlock"
+                        },
+                        {
+                            "type": "view",
+                            "elements": [
+                                {
+                                    "type": "icon",
+                                    "value": "flag-outline",
+                                    "color": "#ECEFF1",
+                                    "size": 26
+                                },
+                                {
+                                    "type": "view",
+                                    "id": "countryPgsBlock",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "marginLeft": 5
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "elements": [
+                                        {
+                                            "type": "progress",
+                                            "color": "#ECEFF1",
+                                            "size": 26
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "label",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "marginLeft": 5,
+                                                    "fontSize": 16
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "id": "countryLbl",
+                                    "visibility": false
+                                }
+                            ],
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "marginTop": 10
+                                        }
+                                    ]
+                                }
+                            ],
+                            "orientation": "horizontal",
+                            "align": "left_center",
+                            "id": "countryBlock"
+                        },
+                        {
+                            "type": "view",
+                            "elements": [
+                                {
+                                    "type": "icon",
+                                    "value": "earth",
+                                    "color": "#ECEFF1",
+                                    "size": 26
+                                },
+                                {
+                                    "type": "view",
+                                    "id": "sitePgsBlock",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "marginLeft": 5
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "elements": [
+                                        {
+                                            "type": "progress",
+                                            "color": "#ECEFF1",
+                                            "size": 26
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "label",
+                                    "styles": [
+                                        {
+                                            "self": [
+                                                {
+                                                    "textDecorationLine": "underline",
+                                                    "marginLeft": 5,
+                                                    "fontSize": 16,
+                                                    "width": "90%"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "id": "siteLbl",
+                                    "visibility": false
+                                }
+                            ],
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "marginTop": 10
+                                        }
+                                    ]
+                                }
+                            ],
+                            "orientation": "horizontal",
+                            "align": "left_center",
+                            "id": "siteBlock",
+                            "visibility": true
+                        },
+                        {
+                            "type": "view",
+                            "align": "center",
+                            "id": "overviewPgsBlock",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "elements": [
+                                {
+                                    "type": "progress",
+                                    "color": "#ECEFF1",
+                                    "size": 60
+                                }
+                            ]
+                        },
+                        {
+                            "type": "label",
+                            "id": "overviewLbl",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "marginTop": 15,
+                                            "fontSize": 16
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "label",
+                            "id": "videosTitleLbl",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "fontSize": 17,
+                                            "fontWeight": "bold",
+                                            "marginTop": 15
+                                        }
+                                    ]
+                                }
+                            ],
+                            "value": "{Trailers}"
+                        },
+                        {
+                            "type": "view",
+                            "align": "center",
+                            "id": "videosPgsBlock",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "elements": [
+                                {
+                                    "type": "progress",
+                                    "color": "#ECEFF1",
+                                    "size": 60
+                                }
+                            ]
+                        },
+                        {
+                            "type": "list",
+                            "itemTemplate": "TemplateVideos",
+                            "orientation": "horizontal",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "marginTop": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "listItem": [
+                                        {
+                                            "justifyContent": "flex-start",
+                                            "height": 135,
+                                            "width": 120,
+                                            "marginLeft": 5,
+                                            "marginRight": 5
+                                        }
+                                    ]
+                                }
+                            ],
+                            "id": "videosList"
+                        },
+                        {
+                            "type": "label",
+                            "id": "actorsTitleLbl",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "fontSize": 17,
+                                            "fontWeight": "bold",
+                                            "marginTop": 15
+                                        }
+                                    ]
+                                }
+                            ],
+                            "value": "{Actors}"
+                        },
+                        {
+                            "type": "view",
+                            "align": "center",
+                            "id": "actorsPgsBlock",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "elements": [
+                                {
+                                    "type": "progress",
+                                    "color": "#ECEFF1",
+                                    "size": 60
+                                }
+                            ]
+                        },
+                        {
+                            "type": "list",
+                            "itemTemplate": "TemplateActors",
+                            "orientation": "horizontal",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "marginTop": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "listItem": [
+                                        {
+                                            "justifyContent": "flex-start",
+                                            "height": 135,
+                                            "width": 60,
+                                            "marginLeft": 5,
+                                            "marginRight": 5
+                                        }
+                                    ]
+                                }
+                            ],
+                            "id": "actorsList"
+                        },
+                        {
+                            "type": "label",
+                            "id": "companiesTitleLbl",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "fontSize": 17,
+                                            "fontWeight": "bold",
+                                            "marginTop": 15
+                                        }
+                                    ]
+                                }
+                            ],
+                            "value": "{Companies}"
+                        },
+                        {
+                            "type": "view",
+                            "align": "center",
+                            "id": "companiesPgsBlock",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "elements": [
+                                {
+                                    "type": "progress",
+                                    "color": "#ECEFF1",
+                                    "size": 60
+                                }
+                            ]
+                        },
+                        {
+                            "type": "list",
+                            "itemTemplate": "TemplateCompanies",
+                            "orientation": "horizontal",
+                            "styles": [
+                                {
+                                    "self": [
+                                        {
+                                            "width": "100%",
+                                            "marginTop": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "listItem": [
+                                        {
+                                            "justifyContent": "flex-start",
+                                            "height": 135,
+                                            "width": 120,
+                                            "marginLeft": 5,
+                                            "marginRight": 5
+                                        }
+                                    ]
+                                }
+                            ],
+                            "id": "companiesList"
+                        }
+                    ],
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "width": "100%",
+                                    "paddingRight": 10,
+                                    "paddingBottom": 10,
+                                    "paddingLeft": 10
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "uptime": 1568625635,
+    "createDoc": 1564379107,
+    "id": "5d3e882758af7cc3caa56031",
+    "styles": ["match_parent"]
+}

@@ -1,0 +1,30 @@
+{
+    "id": "5da855ef7adf840a008b4585",
+    "locale": "en-GB",
+    "values": {
+        "Movies": "Movies",
+        "Search": "Search",
+        "Empty": "The list is empty",
+        "Genres": "Genres",
+        "Filters": "Filters",
+        "Sorting": "Sorting",
+        "Clean": "To clean",
+        "Apply": "To apply",
+        "Actors": "Actors",
+        "Companies": "Companies",
+        "Access_error": "Access error.",
+        "Server_error": "Server error.",
+        "Connection_error": "Connection error.",
+        "Error_open_file": "Could not open file.",
+        "Unknown_error": "Unknown error.",
+        "Close": "Close",
+        "List_view": "List view",
+        "Popularity": "Popularity",
+        "Date_of_release": "Date of release",
+        "Revenue": "Revenue",
+        "Rating": "Rating",
+        "Number_of_ratings": "Number of ratings",
+        "No_internet_connection": "No internet connection",
+        "Trailers": "Trailers"
+    }
+}

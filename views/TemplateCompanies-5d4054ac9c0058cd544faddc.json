@@ -1,0 +1,57 @@
+{
+    "name": "TemplateCompanies",
+    "public": false,
+    "type": "view",
+    "elements": [
+        {
+            "type": "view",
+            "align": "center_top",
+            "elements": [
+                {
+                    "type": "image",
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "width": "100%",
+                                    "height": 90
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "logo",
+                    "fit": "contain"
+                }
+            ],
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "overflow": "hidden",
+                            "width": "100%"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "label",
+            "id": "name",
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "marginTop": 5,
+                            "fontSize": 13,
+                            "width": "100%"
+                        }
+                    ]
+                }
+            ],
+            "align": "center"
+        }
+    ],
+    "uptime": 1565161199,
+    "createDoc": 1564497040,
+    "id": "5d4054ac9c0058cd544faddc"
+}

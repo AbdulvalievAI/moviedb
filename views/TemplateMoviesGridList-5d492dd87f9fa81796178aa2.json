@@ -1,0 +1,81 @@
+{
+    "name": "TemplateMoviesGridList",
+    "public": false,
+    "type": "view",
+    "elements": [
+        {
+            "type": "container",
+            "nestedScreen": "ChildTemplateMoviesVoteAverage"
+        },
+        {
+            "type": "view",
+            "elements": [
+                {
+                    "type": "image",
+                    "fit": "cover",
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "overflow": "hidden",
+                                    "borderRadius": 10,
+                                    "height": "100%",
+                                    "width": "100%"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "posterImg",
+                    "value": ""
+                }
+            ],
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "marginBottom": 5,
+                            "width": "100%",
+                            "height": 280
+                        }
+                    ]
+                }
+            ],
+            "align": "center"
+        },
+        {
+            "type": "label",
+            "id": "nameLbl",
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "fontWeight": "bold",
+                            "fontSize": 13,
+                            "width": "100%"
+                        }
+                    ]
+                }
+            ],
+            "align": "center"
+        },
+        {
+            "type": "label",
+            "id": "originalNameLbl",
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "fontSize": 11,
+                            "color": "rgba(207, 216, 220, 1)",
+                            "width": "100%"
+                        }
+                    ]
+                }
+            ],
+            "align": "center"
+        }
+    ],
+    "uptime": 1565258857,
+    "createDoc": 1565076937,
+    "id": "5d492dd87f9fa81796178aa2"
+}

@@ -1,0 +1,23 @@
+{
+    "name": "ChildTemplateMoviesFavorites",
+    "public": false,
+    "type": "view",
+    "elements": [
+        {
+            "id": "favoritesPgs",
+            "type": "progress",
+            "color": "#ECEFF1",
+            "visibility": false
+        },
+        {
+            "type": "icon",
+            "value": "bookmark-outline",
+            "color": "#ECEFF1",
+            "id": "favoritesIcon"
+        }
+    ],
+    "uptime": 1565014763,
+    "createDoc": 1564127259,
+    "id": "5d3ab048c8826716826ab9c3",
+    "visibility": false
+}

@@ -1,0 +1,58 @@
+{
+    "name": "app",
+    "type": "theme",
+    "uptime": 1564143762,
+    "createDoc": 1563894965,
+    "value": {
+        "root": {
+            "self": [
+                {
+                    "textSecondary": "#757575",
+                    "disabled": "#BDBDBD",
+                    "background": "#FFFFFF",
+                    "textPrimary": "#212121",
+                    "accent": "#FFC107",
+                    "darkPrimary": "#455A64",
+                    "lightPrimary": "#CFD8DC",
+                    "primary": "#455A64"
+                }
+            ]
+        },
+        "label": {
+            "self": [
+                {
+                    "color": "#ECEFF1"
+                }
+            ]
+        },
+        "appbar": {
+            "self": [
+                {
+                    "width": "100%"
+                }
+            ],
+            "title": [
+                {
+                    "color": "#ECEFF1"
+                }
+            ],
+            "menuItem": [
+                {
+                    "color": "#ECEFF1"
+                }
+            ],
+            "searchText": [
+                {
+                    "color": "#ECEFF1"
+                }
+            ],
+            "searchHint": [
+                {
+                    "color": "#B0BEC5"
+                }
+            ]
+        }
+    },
+    "template": "inline",
+    "id": "5d3724c080d86823ff542043"
+}

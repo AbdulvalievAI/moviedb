@@ -1,0 +1,17 @@
+{
+    "name": "match_parent",
+    "type": "style",
+    "uptime": 1563956620,
+    "createDoc": 1563954570,
+    "value": {
+        "self": [
+            {
+                "width": "100%",
+                "height": "100%",
+                "backgroundColor": "#455A64"
+            }
+        ]
+    },
+    "template": "combine",
+    "id": "5d380d964cd4ebca20484fe3"
+}

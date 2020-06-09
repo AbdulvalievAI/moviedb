@@ -1,0 +1,56 @@
+{
+    "name": "ChildTemplateMoviesVoteAverage",
+    "public": false,
+    "type": "view",
+    "elements": [
+        {
+            "type": "view",
+            "elements": [
+                {
+                    "type": "label",
+                    "value": "6.3",
+                    "id": "voteAverageLbl",
+                    "styles": [
+                        {
+                            "self": [
+                                {
+                                    "color": "rgba(236, 239, 241, 1)",
+                                    "paddingLeft": 4,
+                                    "paddingRight": 4,
+                                    "fontWeight": "bold"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "orientation": "horizontal",
+            "align": "center",
+            "styles": [
+                {
+                    "self": [
+                        {
+                            "backgroundColor": "rgba(0, 0, 0, 0.54)",
+                            "borderRadius": 4,
+                            "margin": 5
+                        }
+                    ]
+                }
+            ],
+            "id": "voteAverageBlock"
+        }
+    ],
+    "styles": [
+        {
+            "self": [
+                {
+                    "position": "absolute",
+                    "zIndex": 100
+                }
+            ]
+        }
+    ],
+    "uptime": 1564127025,
+    "createDoc": 1564126962,
+    "id": "5d3aaf165192e1d6f5712b57"
+}
