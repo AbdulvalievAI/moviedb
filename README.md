@@ -4,9 +4,6 @@ Demo приложение для Google Play для просмотра инфо�
 https://play.google.com/store/apps/details?id=ru.platform.moviedb
 
 
-**Информация о приложени и его сборки:** https://confluence.altarix.ru/confluence/display/MARM2/MovieDB
-
-
 **Описание API используемого в приложении**: 
 
 * *Сайт сервиса предоставляющего*: api: https://www.themoviedb.org/
